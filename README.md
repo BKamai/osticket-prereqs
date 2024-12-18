@@ -52,38 +52,13 @@ World Wide Web Services -> Application Development Features -> [X] CGI [X] Commo
 </p>
 <p>
   
-***NOTE*** Make sure all Common HTTP Features are checked.
- 
- Open a browser and type 127.0.0.1 to make sure IIS works.
-  
-<p>
-<img src="https://imgur.com/eICujoq.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  
-  
-  
 5.) Download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and follow the steps.
   
 6.) Download and install the Rewrite Module (rewrite_amd64_en-US.msi).
   
-7.) In your C drive, make a new folder called PHP.
+7.) Within the Root of your C: drive, create a folder named 'PHP'
 
-8.) Download PHP 7.3.8, unzip it, and put it in the C:\PHP folder.
-  
-  !! ATTENTION !!
-Choose to “Keep” the file:
-  
-<p>
-<img src="https://imgur.com/xZv1Yhw.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-<p>
-<img src="https://imgur.com/YwBhqo0.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+8.) Download PHP 7.3.8 and extract it into the C:\PHP folder.
 
 9.) Download and run the VC_redist.x86.exe installer.
   
