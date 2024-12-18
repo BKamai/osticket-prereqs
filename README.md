@@ -26,69 +26,46 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-3.) In Control Panel, go to Programs > Turn Windows features on or off, and check these: World Wide Web Services > Application Development Features > CGI
+1.) In Control Panel, go to Programs > Turn Windows features on or off, and check these: World Wide Web Services > Application Development Features > CGI
 Common HTTP Features (check all)
 
 <p>
-<img src="https://imgur.com/fGXMpx4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JGOybPN.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-<p>
-<img src="https://imgur.com/LBGkAw6.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-4.) You will want to install / enable IIS in Windows with CGI and Common HTTP Features
+2.) You will want to install / enable IIS in Windows with CGI and Common HTTP Features
 
 World Wide Web Services -> Application Development Features -> [X] CGI [X] Common HTTP Features
 <p>
-<img src="https://imgur.com/LQjw9le.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/54JKrcL.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-<p>
-<img src="https://imgur.com/pbPeHb1.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+3.) Download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and follow the steps.
   
-5.) Download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and follow the steps.
+4.) Download and install the Rewrite Module (rewrite_amd64_en-US.msi).
   
-6.) Download and install the Rewrite Module (rewrite_amd64_en-US.msi).
-  
-7.) Within the Root of your C: drive, create a folder named 'PHP'
+5.) Within the Root of your C: drive, create a folder named 'PHP'
 
-8.) Download PHP 7.3.8 and extract it into the C:\PHP folder.
+6.) Download PHP 7.3.8 and extract it into the C:\PHP folder.
 
-<p>
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWl1azh6Mzk4M2doa2F4bHEwNzNlNnAzaG84eTUydDRlazB1MGNxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UNngACibSv9c4ohvTi/giphy.gif" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+https://github.com/user-attachments/assets/241fa2c7-1b9c-4a04-b15b-b8b4aca4e5b7
 
-9.) Download and run the VC_redist.x86.exe installer.
+7.) Download and run the VC_redist.x86.exe installer.
   
-10.) Download and install MySQL 5.5.62. Use the wizard to set up a root password as Password1.
+8.) Download and install MySQL 5.5.62. Use the wizard to set up a root password as root.
   
-<p>
-<img src="https://imgur.com/KxcUy7C.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  Execute the process on the next page.
-  
-<p>
-<img src="https://imgur.com/i7sn6hT.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-11.) Search for IIS in the Start menu and open it as administrator.
+https://github.com/user-attachments/assets/4c933239-d9f4-4ea0-b67c-78a17fe0fa6c
+
+9.) Launch IIS via the Start menu and open it as administrator.
   
 <p>
 <img src="https://imgur.com/rgdZwmM.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-12.) In IIS, go to PHP Manager > Register New PHP Version. Select php-cgi.exe from C:\PHP and restart IIS.
+10.) In IIS, go to PHP Manager > Register New PHP Version. Select php-cgi.exe from C:\PHP and restart IIS.
   
 <p>
 <img src="https://imgur.com/vvTLNBH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -113,11 +90,11 @@ World Wide Web Services -> Application Development Features -> [X] CGI [X] Commo
 </p>
 <p>
   
-13.) Download osTicket v1.15.8, extract the "upload" folder, and copy it to C:\inetpub\wwwroot. Rename "upload" to "osTicket".
+11.) Download osTicket v1.15.8, extract the "upload" folder, and copy it to C:\inetpub\wwwroot. Rename "upload" to "osTicket".
   
   Reload IIS again.
   
-14.) On IIS go to sites -> Default -> osTicket
+12.) On IIS go to sites -> Default -> osTicket
   -On the right, click “Browse *:80”
   
 <p>
@@ -157,7 +134,7 @@ php_opcache.dll
 <p>
   
   
-15.) Go to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename it to ost-config.php.
+13.) Go to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename it to ost-config.php.
 Set permissions to Full Control for "Everyone".
   
   
@@ -196,7 +173,7 @@ Set permissions to Full Control for "Everyone".
   
   In the browser, fill out the osTicket setup page (skip Database Settings for now).
   
-  Download HeidiSQL, create a new session, and connect using username root and password Password1. In HeidiSQL, create a new database called osTicket.
+  Download HeidiSQL, create a new session, and connect using username root and password root. In HeidiSQL, create a new database called osTicket.
   
 <p>
 <img src="https://imgur.com/i7a4gWC.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -215,7 +192,7 @@ Set permissions to Full Control for "Everyone".
 </p>
 <p>
   
-  In the browser setup, set MySQL details: username root, password Password1, and database osTicket.
+  In the browser setup, set MySQL details: username root, password root, and database osTicket.
   
 <p>
 <img src="https://imgur.com/0rG1AJm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
