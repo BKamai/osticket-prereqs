@@ -60,6 +60,11 @@ World Wide Web Services -> Application Development Features -> [X] CGI [X] Commo
 
 8.) Download PHP 7.3.8 and extract it into the C:\PHP folder.
 
+<p>
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWl1azh6Mzk4M2doa2F4bHEwNzNlNnAzaG84eTUydDRlazB1MGNxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UNngACibSv9c4ohvTi/giphy.gif" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 9.) Download and run the VC_redist.x86.exe installer.
   
 10.) Download and install MySQL 5.5.62. Use the wizard to set up a root password as Password1.
